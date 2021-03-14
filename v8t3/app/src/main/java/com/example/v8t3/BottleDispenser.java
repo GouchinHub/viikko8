@@ -63,7 +63,9 @@ public class BottleDispenser {
             return "Klink klink!! All money gone!";
         } else {
             DecimalFormat df = new DecimalFormat("0.00");
-            return "Klink klink. Money came out! You got "+ df.format(money) +"€ back";
+            displayString = "Klink klink. Money came out! You got "+ df.format(money) +"€ back";
+            money = 0;
+            return displayString;
         }
     }
 

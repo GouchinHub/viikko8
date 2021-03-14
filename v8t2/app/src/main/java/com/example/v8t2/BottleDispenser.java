@@ -29,6 +29,7 @@ public class BottleDispenser {
     public static BottleDispenser getInstance() {
         return bd;
     }
+
     ArrayList<Bottle> bottle_array = new ArrayList<Bottle>();
     private double money;
     private String wholeString = "";
