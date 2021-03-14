@@ -49,11 +49,12 @@ public class MainActivity extends AppCompatActivity {
         //Toast to send action reports to user
         toast = Toast.makeText(MainActivity.this," ",Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.BOTTOM, 0,320);
-        //SeekBar for different sizes
+        //spinner arraylist
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.sizes));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sizes.setAdapter(myAdapter);
+        //SeekBar for different sizes
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
