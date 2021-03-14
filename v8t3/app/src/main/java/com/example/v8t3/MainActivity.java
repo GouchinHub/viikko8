@@ -20,7 +20,6 @@ import java.text.DecimalFormat;
 
 
 public class MainActivity extends AppCompatActivity {
-    int buyState = 1;
     private BottleDispenser bd = BottleDispenser.getInstance();
     private TextView display, moneyView, priceView, bottle;
     private Toast toast;
